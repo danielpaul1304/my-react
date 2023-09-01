@@ -65,6 +65,7 @@ class TodoParent extends React.Component {
     <li key={index}>
         {this.state.editIndex === index ? (
             <div>
+            <h1>Hi</h1>
                 <input
                     type="text"
                     value={this.state.editItem}
