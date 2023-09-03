@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { MdDeleteForever } from "react-icons/md";
 
 class TodoParent extends React.Component {
     constructor(props) {
@@ -65,7 +66,6 @@ class TodoParent extends React.Component {
     <li key={index}>
         {this.state.editIndex === index ? (
             <div>
-            <h1>Hi</h1>
                 <input
                     type="text"
                     value={this.state.editItem}
@@ -77,7 +77,7 @@ class TodoParent extends React.Component {
             <div>
                 {todo}
                 <button onClick={() => this.handleEdit(index)}>Edit</button>
-                <button onClick={() => this.handleDelete(index)}>Delete</button>
+                <button onClick={() => this.handleDelete(index)}><MdDeleteForever/></button>
             </div>
         )}
     </li>

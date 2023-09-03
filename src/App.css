@@ -30,12 +30,12 @@ input{
     border-radius: 10px;
     height: 30px;
     margin-right: 10px;
-    margin-left: 60px;
+    margin-left: 0px;
 }
 li{
     background-color: white;
     border-bottom: 2px solid black;
-    width: 15rem;
+    width: 20rem;
     padding: 5px;
     margin: 10px;
 }
