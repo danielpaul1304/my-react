@@ -63,7 +63,7 @@ class TodoParent extends React.Component {
                 </div>
                 <ul>
                 {todos.map((todo, index) => (
-    <li key={index}>g1
+    <li key={index}>
         {this.state.editIndex === index ? (
             <div>
                 <input
