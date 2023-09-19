@@ -1,5 +1,6 @@
 import React, { Component } from "react"
-import { MdDeleteForever } from "react-icons/md";
+import { FaTrashAlt, FaEdit, FaSave } from "react-icons/fa";
+
 
 class TodoParent extends React.Component {
     constructor(props) {
@@ -71,13 +72,13 @@ class TodoParent extends React.Component {
                     value={this.state.editItem}
                     onChange={(e) => this.setState({ editItem: e.target.value })}
                 />
-                <button onClick={() => this.handleSave(index)}>Save</button>
+                <button onClick={() => this.handleSave(index)}><FaSave/></button>
             </div>
         ) : (
             <div>
                 {todo}
-                <button onClick={() => this.handleEdit(index)}>Edit</button>
-                <button onClick={() => this.handleDelete(index)}><MdDeleteForever/></button>
+                <button onClick={() => this.handleEdit(index)}><FaEdit/></button>
+                <button onClick={() => this.handleDelete(index)}><FaTrashAlt/></button>
             </div>
         )}
     </li>
