@@ -58,7 +58,6 @@ class TodoParent extends React.Component {
         return (
             <div class="container">
                 <h1 style={{textAlign: "center" }}>Todo List</h1>
-                <h1>Hi</h1>
                 <div id="add">
                 <input type='text' placeholder="Add Task" value={newTodo} onChange={this.handleInputChange} />
                 <button id="submit-btn" type="submit" onClick={this.addTodo}>Add</button>
